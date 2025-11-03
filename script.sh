@@ -1,37 +1,37 @@
 #    -----  链接模型  ------------
 
 # cosmos ？
-ln -s /kaggle/input/cosmos-predict2-2b-video2world-480p-16fps/cosmos_predict2_2B_video2world_480p_16fps.safetensors ./models/diffusion_models/cosmos_predict2_2B_video2world_480p_16fps.safetensors
+# ln -s /kaggle/input/cosmos-predict2-2b-video2world-480p-16fps/cosmos_predict2_2B_video2world_480p_16fps.safetensors ./models/diffusion_models/cosmos_predict2_2B_video2world_480p_16fps.safetensors
 
 # my lora
-git clone https://huggingface.co/datasets/Heng365/loras /kaggle/working/fromhf
-mv /kaggle/working/fromhf/* ./models/loras
+# git clone https://huggingface.co/datasets/Heng365/loras /kaggle/working/fromhf
+# mv /kaggle/working/fromhf/* ./models/loras
 
 # sd lora ？
-ln -s /kaggle/input/moxinv1/MoXinV1.safetensors ./models/loras/MoXinV1.safetensors
-ln -s /kaggle/input/blindbox-v1-mix/blindbox_v1_mix.safetensors ./models/loras/blindbox_v1_mix.safetensors
-ln -s /kaggle/input/dreamshaper-8/dreamshaper_8.safetensors ./models/checkpoints/dreamshaper_8.safetensors
+# ln -s /kaggle/input/moxinv1/MoXinV1.safetensors ./models/loras/MoXinV1.safetensors
+# ln -s /kaggle/input/blindbox-v1-mix/blindbox_v1_mix.safetensors ./models/loras/blindbox_v1_mix.safetensors
+# ln -s /kaggle/input/dreamshaper-8/dreamshaper_8.safetensors ./models/checkpoints/dreamshaper_8.safetensors
 
-ln -s /kaggle/input/control-v11p-sd15-openpose/control_v11p_sd15_openpose.pth ./models/controlnet/control_v11p_sd15_openpose.pth
+# ln -s /kaggle/input/control-v11p-sd15-openpose/control_v11p_sd15_openpose.pth ./models/controlnet/control_v11p_sd15_openpose.pth
 
 #wan t2v
-ln -s /kaggle/input/wan-2-1-vae/wan_2.1_vae.safetensors ./models/vae/wan_2.1_vae.safetensors
-ln -s /kaggle/input/umt5-xxl-fp8-e4m3fn-scaled/umt5_xxl_fp8_e4m3fn_scaled.safetensors ./models/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
-ln -s /kaggle/input/wan2-1-t2v-1-3b-fp16/wan2.1_t2v_1.3B_fp16.safetensors ./models/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors
+# ln -s /kaggle/input/wan-2-1-vae/wan_2.1_vae.safetensors ./models/vae/wan_2.1_vae.safetensors
+# ln -s /kaggle/input/umt5-xxl-fp8-e4m3fn-scaled/umt5_xxl_fp8_e4m3fn_scaled.safetensors ./models/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+# ln -s /kaggle/input/wan2-1-t2v-1-3b-fp16/wan2.1_t2v_1.3B_fp16.safetensors ./models/diffusion_models/wan2.1_t2v_1.3B_fp16.safetensors
 
 # wan vace
 #wan2.1_vace_1.3B_fp16.safetensors, 目前仅支持480P的视频，不能支持720P的。
-ln -s /kaggle/input/wan2-1-vace-1-3b-fp16/wan2.1_vace_1.3B_fp16.safetensors ./models/diffusion_models/wan2.1_vace_1.3B_fp16.safetensors
-ln -s /kaggle/input/wan21-causvid-bidirect2-t2v-1-3b-lora-rank32/Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors ./models/loras/Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors
-ln -s /kaggle/input/umt5-xxl-fp16/umt5_xxl_fp16.safetensors ./models/text_encoders/umt5_xxl_fp16.safetensors
+# ln -s /kaggle/input/wan2-1-vace-1-3b-fp16/wan2.1_vace_1.3B_fp16.safetensors ./models/diffusion_models/wan2.1_vace_1.3B_fp16.safetensors
+# ln -s /kaggle/input/wan21-causvid-bidirect2-t2v-1-3b-lora-rank32/Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors ./models/loras/Wan21_CausVid_bidirect2_T2V_1_3B_lora_rank32.safetensors
+# ln -s /kaggle/input/umt5-xxl-fp16/umt5_xxl_fp16.safetensors ./models/text_encoders/umt5_xxl_fp16.safetensors
 #wan2.1_vace_14B_fp16.safetensors, T4 16G 爆了
 # wget -c https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/diffusion_models/wan2.1_vace_14B_fp16.safetensors -P ./models/diffusion_models
 # ln -s /kaggle/input/wan21-causvid-14b-t2v-lora-rank32/Wan21_CausVid_14B_T2V_lora_rank32.safetensors ./models/loras/Wan21_CausVid_14B_T2V_lora_rank32.safetensors
 
 # wan lora: dabaichui 试一试哦！！
-wget -c https://huggingface.co/Heng365/dabaichui/resolve/main/dabaichui.safetensors -P ./models/loras
+# wget -c https://huggingface.co/Heng365/dabaichui/resolve/main/dabaichui.safetensors -P ./models/loras
 
-wget -c https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl.vae.safetensors -P ./models/vae
+# wget -c https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl.vae.safetensors -P ./models/vae
 
 # wget -c https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0/resolve/d973c1cc9d205a69cb3650663e827acc4863a640/OpenPoseXL2.safetensors -P ./models/controlnet
 
@@ -49,17 +49,17 @@ wget https://huggingface.co/Madespace/clip/resolve/main/google_t5-v1_1-xxl_encod
 
 
 # Qwen Image
-ln -s /kaggle/input/qwen-image-edit-fp8-e4m3fn/qwen_image_edit_fp8_e4m3fn.safetensors ./models/diffusion_models/qwen_image_edit_fp8_e4m3fn.safetensors
-ln -s /kaggle/input/qwen-image-vae/qwen_image_vae.safetensors ./models/vae/qwen_image_vae.safetensors
-ln -s /kaggle/input/qwen-2-5-vl-7b-fp8-scaled/qwen_2.5_vl_7b_fp8_scaled.safetensors ./models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
+# ln -s /kaggle/input/qwen-image-edit-fp8-e4m3fn/qwen_image_edit_fp8_e4m3fn.safetensors ./models/diffusion_models/qwen_image_edit_fp8_e4m3fn.safetensors
+# ln -s /kaggle/input/qwen-image-vae/qwen_image_vae.safetensors ./models/vae/qwen_image_vae.safetensors
+# ln -s /kaggle/input/qwen-2-5-vl-7b-fp8-scaled/qwen_2.5_vl_7b_fp8_scaled.safetensors ./models/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors
 
-ln -s /kaggle/input/qwen-image-fp8-e4m3fn/qwen_image_fp8_e4m3fn.safetensors ./models/diffusion_models/qwen_image_fp8_e4m3fn.safetensors
+# ln -s /kaggle/input/qwen-image-fp8-e4m3fn/qwen_image_fp8_e4m3fn.safetensors ./models/diffusion_models/qwen_image_fp8_e4m3fn.safetensors
 
-ln -s /kaggle/input/qwen-image-lightning-8steps-v2-0/Qwen-Image-Lightning-8steps-V2.0.safetensors ./models/loras/Qwen-Image-Lightning-8steps-V2.0.safetensors
-ln -s /kaggle/input/qwen-image-lightning-4steps-v2-0/Qwen-Image-Lightning-4steps-V2.0.safetensors ./models/loras/Qwen-Image-Lightning-4steps-V2.0.safetensors
+# ln -s /kaggle/input/qwen-image-lightning-8steps-v2-0/Qwen-Image-Lightning-8steps-V2.0.safetensors ./models/loras/Qwen-Image-Lightning-8steps-V2.0.safetensors
+# ln -s /kaggle/input/qwen-image-lightning-4steps-v2-0/Qwen-Image-Lightning-4steps-V2.0.safetensors ./models/loras/Qwen-Image-Lightning-4steps-V2.0.safetensors
 
-ln -s /kaggle/input/qwen-image-edit-lightning-4steps-v1-0/Qwen-Image-Edit-Lightning-4steps-V1.0.safetensors ./models/loras/Qwen-Image-Edit-Lightning-4steps-V1.0.safetensors
-ln -s /kaggle/input/qwen-image-edit-lightning-8steps-v1-0/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors ./models/loras/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors
+# ln -s /kaggle/input/qwen-image-edit-lightning-4steps-v1-0/Qwen-Image-Edit-Lightning-4steps-V1.0.safetensors ./models/loras/Qwen-Image-Edit-Lightning-4steps-V1.0.safetensors
+# ln -s /kaggle/input/qwen-image-edit-lightning-8steps-v1-0/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors ./models/loras/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors
 
 #Flux dev
 ln -s /kaggle/input/flux1-dev-fp8/flux1-dev-fp8.safetensors ./models/diffusion_models/flux1-dev-fp8.safetensors
@@ -78,50 +78,50 @@ ln -s /kaggle/input/flux1-redux-dev/flux1-redux-dev.safetensors ./models/style_m
 
 
 #iniverseMixSFWNSFW_ponyRealGuofengV51  dreamshaperXL_lightningDPMSDE
-ln -s /kaggle/input/juggernaut-xl-ragnarok/Juggernaut-XL-Ragnarok.safetensors ./models/checkpoints
-ln -s /kaggle/input/iniversemix/iniverseMix.safetensors ./models/checkpoints/iniverseMix.safetensors
+# ln -s /kaggle/input/juggernaut-xl-ragnarok/Juggernaut-XL-Ragnarok.safetensors ./models/checkpoints
+# ln -s /kaggle/input/iniversemix/iniverseMix.safetensors ./models/checkpoints/iniverseMix.safetensors
 
-ln -s /kaggle/input/chilloutmix/chilloutmix_NiPrunedFp32Fix.safetensors ./models/checkpoints/chilloutmix_NiPrunedFp32Fix.safetensors
-wget https://huggingface.co/yesyeahvh/ulzzang-6500/resolve/main/ulzzang-6500.pt -O ./models/embeddings/ulzzang-6500.pt
-wget https://huggingface.co/KatarLegacy/PureErosFace/resolve/main/pureerosface_v1.pt -O ./models/embeddings/pureerosface_v1.pt
+# ln -s /kaggle/input/chilloutmix/chilloutmix_NiPrunedFp32Fix.safetensors ./models/checkpoints/chilloutmix_NiPrunedFp32Fix.safetensors
+# wget https://huggingface.co/yesyeahvh/ulzzang-6500/resolve/main/ulzzang-6500.pt -O ./models/embeddings/ulzzang-6500.pt
+# wget https://huggingface.co/KatarLegacy/PureErosFace/resolve/main/pureerosface_v1.pt -O ./models/embeddings/pureerosface_v1.pt
 
 #InstantID
-mkdir -p ./models/instantid
+# mkdir -p ./models/instantid
 # wget -c https://huggingface.co/InstantX/InstantID/resolve/main/ip-adapter.bin -P ./models/instantid
-ln -s /kaggle/input/ip-adapter/ip-adapter.bin ./models/instantid/ip-adapter.bin
+# ln -s /kaggle/input/ip-adapter/ip-adapter.bin ./models/instantid/ip-adapter.bin
 
-wget -c https://huggingface.co/MonsterMMORPG/tools/resolve/main/antelopev2.zip -P ./models
-mkdir -p ./models/insightface/models
-unzip ./models/antelopev2.zip -d ./models/insightface/models
+# wget -c https://huggingface.co/MonsterMMORPG/tools/resolve/main/antelopev2.zip -P ./models
+# mkdir -p ./models/insightface/models
+# unzip ./models/antelopev2.zip -d ./models/insightface/models
 
 # instantid
 #  -O overrides -P if both are specified.
 # wget -c https://huggingface.co/InstantX/InstantID/resolve/main/ControlNetModel/diffusion_pytorch_model.safetensors -O ./models/controlnet/instantid-controlnet.safetensors
-ln -s /kaggle/input/diffusion-pytorch-model/diffusion_pytorch_model.safetensors ./models/controlnet/instantid-controlnet.safetensors
-wget -c https://huggingface.co/InstantX/InstantID/resolve/main/ControlNetModel/config.json -P ./models/controlnet
+# ln -s /kaggle/input/diffusion-pytorch-model/diffusion_pytorch_model.safetensors ./models/controlnet/instantid-controlnet.safetensors
+# wget -c https://huggingface.co/InstantX/InstantID/resolve/main/ControlNetModel/config.json -P ./models/controlnet
 
 # wget -c https://huggingface.co/lllyasviel/sd_control_collection/resolve/d1b278d0d1103a3a7c4f7c2c327d236b082a75b1/thibaud_xl_openpose.safetensors -P ./models/controlnet
 
 # When using ultralytics models, save them separately in models/ultralytics/bbox and models/ultralytics/segm depending on the type of model.
-mkdir -p ./models/ultralytics/bbox
-wget -c https://huggingface.co/Tenofas/ComfyUI/resolve/d79945fb5c16e8aef8a1eb3ba1788d72152c6d96/ultralytics/bbox/Eyes.pt -P ./models/ultralytics/bbox
+# mkdir -p ./models/ultralytics/bbox
+# wget -c https://huggingface.co/Tenofas/ComfyUI/resolve/d79945fb5c16e8aef8a1eb3ba1788d72152c6d96/ultralytics/bbox/Eyes.pt -P ./models/ultralytics/bbox
 
-wget -c https://huggingface.co/YouLiXiya/YL-SAM/resolve/main/sam_vit_b_01ec64.pth -P  ./models/sams
-wget -c https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/detection/bbox/face_yolov8m.pt -P ./models/ultralytics/bbox
+# wget -c https://huggingface.co/YouLiXiya/YL-SAM/resolve/main/sam_vit_b_01ec64.pth -P  ./models/sams
+# wget -c https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/detection/bbox/face_yolov8m.pt -P ./models/ultralytics/bbox
 
 
 
 # ComfyUI_IPAdapter_plus models
-mkdir -p ./models/ipadapter
-wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors -O ./models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+# mkdir -p ./models/ipadapter
+# wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors -O ./models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
 # SDXL ipadapter model
-wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors -P ./models/ipadapter
-wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors -P ./models/ipadapter
-wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors -P ./models/ipadapter
+# wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors -P ./models/ipadapter
+# wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors -P ./models/ipadapter
+# wget -c https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors -P ./models/ipadapter
 
 # pulid model
-mkdir -p ./models/pulid/
-wget -c https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -P ./models/pulid/
+# mkdir -p ./models/pulid/
+# wget -c https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.safetensors -P ./models/pulid/
 
 # testing it
 # wget -c https://huggingface.co/JackAILab/ConsistentID/resolve/main/ConsistentID_SDXL-v1.bin -P ./models/unet
@@ -153,12 +153,12 @@ wget -c https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.0.saf
 # ln -s /kaggle/input/qwen-image-edit-q4-k-s/Qwen_Image_Edit-Q4_K_S.gguf ./models/diffusion_models/Qwen_Image_Edit-Q4_K_S.gguf
 # ln -s /kaggle/input/qwen2-5-vl-7b-instruct-mmproj-bf16/Qwen2.5-VL-7B-Instruct-mmproj-BF16.gguf ./models/text_encoders/Qwen2.5-VL-7B-Instruct-mmproj-BF16.gguf
 
-ln -s /kaggle/input/qwen-image-q6-k/qwen-image-Q6_K.gguf ./models/diffusion_models/qwen-image-Q6_K.gguf
+# ln -s /kaggle/input/qwen-image-q6-k/qwen-image-Q6_K.gguf ./models/diffusion_models/qwen-image-Q6_K.gguf
 
-ln -s /kaggle/input/qwen-image-edit-2509-q6-k/Qwen-Image-Edit-2509-Q6_K.gguf ./models/diffusion_models/Qwen_Image_Edit-2509-Q6_K.gguf
-ln -s /kaggle/input/qwen-image-edit-q6-k/Qwen_Image_Edit-Q6_K.gguf ./models/diffusion_models/Qwen_Image_Edit-Q6_K.gguf
+# ln -s /kaggle/input/qwen-image-edit-2509-q6-k/Qwen-Image-Edit-2509-Q6_K.gguf ./models/diffusion_models/Qwen_Image_Edit-2509-Q6_K.gguf
+# ln -s /kaggle/input/qwen-image-edit-q6-k/Qwen_Image_Edit-Q6_K.gguf ./models/diffusion_models/Qwen_Image_Edit-Q6_K.gguf
 
-ln -s /kaggle/input/qwen-image-asianmix-lora/Qwen_Image_AsianMix_Lora.safetensors ./models/loras/Qwen_Image_AsianMix_Lora.safetensors
+# ln -s /kaggle/input/qwen-image-asianmix-lora/Qwen_Image_AsianMix_Lora.safetensors ./models/loras/Qwen_Image_AsianMix_Lora.safetensors
 
 # ln -s /kaggle/input/svdq-int4-r128-qwen-image/svdq-int4_r128-qwen-image.safetensors ./models/diffusion_models/svdq-int4_r128-qwen-image.safetensors
 # ln -s /kaggle/input/svdq-int4-r128-qwen-image-lightningv1-0-4steps/svdq-int4_r128-qwen-image-lightningv1.0-4steps.safetensors ./models/loras
